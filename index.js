@@ -1,3 +1,16 @@
+function computerPlay() {
+  var arr = ["rock", "paper", "scissors"];
+  var randomans = arr[Math.floor(Math.random() * arr.length)];
+  return randomans;
+}
+const computerSelection = computerPlay();
+
+rockbtn.addEventListener('click',playRound("rock",computerSelection));
+paperbtn.addEventListener('click',playRound("paper",computerSelection));
+scissorbtn.addEventListener('click',playRound("rock",computerSelection));
+
+console.log(playerSelection);
+
 function playRound(playerSelection, computerSelection) {
     if (
       playerSelection.toLowerCase() == "rock" &&
@@ -54,7 +67,7 @@ function playRound(playerSelection, computerSelection) {
   }
 
 
-function game() {
+/*  function game() {
   let ps = 0,
     cs = 0;
   while (ps <=5 || cs <= 5) {
@@ -99,3 +112,4 @@ function game() {
 }
 let final = game();
 console.log(final);
+*/
