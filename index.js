@@ -2,6 +2,14 @@ const result = document.querySelector('#result');
 const content = document.createElement('div');
 result.appendChild(content);
 /* content.classList.add('content'); */
+const score = document.querySelector('#score');
+const point = document.createElement('div');
+score.appendChild(point);
+
+const scorec = document.querySelector('#scorec');
+const pointc = document.createElement('div');
+scorec.appendChild(pointc);
+
 const you = document.querySelector('#you');
 const ycon = document.createElement('div');
 you.appendChild(ycon);
@@ -81,6 +89,8 @@ function playRound(playerSelection) {
       content.textContent = "You lose! Rock beats Scissors!";
       cs++;
     } 
+    point.textContent = "Your score="+ps;
+    pointc.textContent = "Computer's score="+cs;
     if(ps == 5){
       ycon.textContent = "You have won most times!";
     }
@@ -88,7 +98,6 @@ function playRound(playerSelection) {
       ccon.textContent = "You have lost more times :(";
     }
   }
-
 
 
 /* function game() {
