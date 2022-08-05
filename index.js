@@ -11,6 +11,19 @@ function computerPlay() {
   return randomans;
 } 
 
+rockbtn.addEventListener('click', () => {
+  playRound("rock");
+});
+paperbtn.addEventListener('click', () => {
+  playRound("paper");
+});
+scissorbtn.addEventListener('click', () => {
+  playRound("scissors");
+});
+
+let ps = 0,
+cs = 0;
+
 function playRound(playerSelection) {
 
   const computerSelection = computerPlay();
@@ -70,20 +83,6 @@ function playRound(playerSelection) {
   }
 
 function game() {
-  let ps = 0,
-    cs = 0;
-  while (ps <=5 || cs <= 5) {
-    rockbtn.addEventListener('click', () => {
-      playRound("rock");
-    });
-    paperbtn.addEventListener('click', () => {
-      playRound("paper");
-    });
-    scissorbtn.addEventListener('click', () => {
-      playRound("scissors");
-    });
-  }
-
   if (cs > ps) {
     return "You have lost more times :(";
     
