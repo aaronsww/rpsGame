@@ -9,21 +9,11 @@ function computerPlay() {
   var arr = ["rock", "paper", "scissors"];
   var randomans = arr[Math.floor(Math.random() * arr.length)];
   return randomans;
-}
-const computerSelection = computerPlay();
+} 
 
+function playRound(playerSelection) {
 
-rockbtn.addEventListener('click', () => {
-  playRound("rock",computerSelection);
-});
-paperbtn.addEventListener('click', () => {
-  playRound("paper",computerSelection);
-});
-scissorbtn.addEventListener('click', () => {
-  playRound("scissors",computerSelection);
-});
-
-function playRound(playerSelection, computerSelection) {
+  const computerSelection = computerPlay();
     if (
        playerSelection.toLowerCase() == "rock" && 
       computerSelection == "rock"
@@ -45,75 +35,53 @@ function playRound(playerSelection, computerSelection) {
       computerSelection == "scissors"
     ) {
       content.textContent = "You win! Rock beats Scissors!";
-  
+      ps++;
     } else if (
        playerSelection.toLowerCase() == "paper" && 
       computerSelection == "rock"
     ) {
       content.textContent =  "You win! Paper beats Rock!";
-      
+      ps++;
     } else if (
        playerSelection.toLowerCase() == "scissors" && 
       computerSelection == "paper"
     ) {
       content.textContent =  "You win! Scissors beats Paper!";
-       
+      ps++;
     } else if (
       playerSelection.toLowerCase() == "rock" && 
       computerSelection == "paper"
     ) {
       content.textContent =  "You lose! Paper beats Rock!";
-     
+      cs++;
     } else if (
        playerSelection.toLowerCase() == "paper" && 
       computerSelection == "scissors"
     ) {
       content.textContent = "You lose! Scissors beats paper!";
-       
+      cs++;
     } else if (
      playerSelection.toLowerCase() == "scissors" && 
       computerSelection == "rock"
     ) {
       content.textContent = "You lose! Rock beats Scissors!";
-       
+      cs++;
     } 
   }
 
-
-
-/*  function game() {
+function game() {
   let ps = 0,
     cs = 0;
   while (ps <=5 || cs <= 5) {
-    function computerPlay() {
-      var arr = ["rock", "paper", "scissors"];
-      var randomans = arr[Math.floor(Math.random() * arr.length)];
-      return randomans;
-    }
-    const computerSelection = computerPlay();
-    const playerSelection = prompt(
-      "Enter your choice: Rock, Paper or Scissors"
-    );
-    
-    let a = playRound(playerSelection, computerSelection);
-    if (
-      a == "You win! Rock beats Scissors!" ||
-      a == "You win! Paper beats Rock!" ||
-      a == "You win! Scissors beats Paper!"
-    ) {
-      ps++;
-    } else if (
-      a == "You lose! Rock beats Scissors!" ||
-      a == "You lose! Paper beats Rock!" ||
-      a == "You lose! Scissors beats Paper!"
-    ) {
-      cs++;
-    }
-    else 
-    {
-      ps++;
-      cs++;
-    }
+    rockbtn.addEventListener('click', () => {
+      playRound("rock");
+    });
+    paperbtn.addEventListener('click', () => {
+      playRound("paper");
+    });
+    scissorbtn.addEventListener('click', () => {
+      playRound("scissors");
+    });
   }
 
   if (cs > ps) {
@@ -121,9 +89,8 @@ function playRound(playerSelection, computerSelection) {
     
   } else {
     return "You have won most times!";
-     
   }
 }
+
 let final = game();
 console.log(final);
-*/
