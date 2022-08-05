@@ -18,6 +18,7 @@ const comp = document.querySelector('#comp');
 const ccon = document.createElement('div');
 comp.appendChild(ccon);
 
+
 function computerPlay() {
   var arr = ["rock", "paper", "scissors"];
   var randomans = arr[Math.floor(Math.random() * arr.length)];
@@ -93,11 +94,27 @@ function playRound(playerSelection) {
     pointc.textContent = "Computer's score="+cs;
     if(ps == 5){
       ycon.textContent = "You have won most times!";
+      const reload = document.querySelector('#reload');
+      const reclick = document.createElement('button');
+      reclick.textContent = "Play Again";
+      reclick.addEventListener('click', reloadThePage);
+      reload.appendChild(reclick);
+
     }
     else if(cs == 5){
       ccon.textContent = "You have lost more times :(";
+      const reload = document.querySelector('#reload');
+      const reclick = document.createElement('button');
+      reclick.textContent = "Play Again";
+      reclick.addEventListener('click', reloadThePage);
+      reload.appendChild(reclick);
     }
   }
+
+
+function reloadThePage(){
+    location.reload();
+} 
 
 
 /* function game() {
