@@ -1,9 +1,14 @@
 const result = document.querySelector('#result');
-
 const content = document.createElement('div');
-/* content.classList.add('content'); */
-
 result.appendChild(content);
+/* content.classList.add('content'); */
+const you = document.querySelector('#you');
+const ycon = document.createElement('div');
+you.appendChild(ycon);
+
+const comp = document.querySelector('#comp');
+const ccon = document.createElement('div');
+comp.appendChild(ccon);
 
 function computerPlay() {
   var arr = ["rock", "paper", "scissors"];
@@ -25,7 +30,6 @@ let ps = 0,
 cs = 0;
 
 function playRound(playerSelection) {
-
   const computerSelection = computerPlay();
     if (
        playerSelection.toLowerCase() == "rock" && 
@@ -73,23 +77,29 @@ function playRound(playerSelection) {
     ) {
       content.textContent = "You lose! Scissors beats paper!";
       cs++;
-    } else if (
-     playerSelection.toLowerCase() == "scissors" && 
-      computerSelection == "rock"
-    ) {
+    } else {
       content.textContent = "You lose! Rock beats Scissors!";
       cs++;
     } 
+    if(ps == 5){
+      ycon.textContent = "You have won most times!";
+    }
+    else if(cs == 5){
+      ccon.textContent = "You have lost more times :(";
+    }
   }
 
-function game() {
-  if (cs > ps) {
+
+
+/* function game() {
+  if (cs == 5) {
     return "You have lost more times :(";
     
-  } else {
+  } else if(ps == 5){
     return "You have won most times!";
   }
-}
+} 
 
 let final = game();
 console.log(final);
+*/
