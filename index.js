@@ -1,22 +1,22 @@
 const result = document.querySelector('#result');
 const content = document.createElement('div');
 result.appendChild(content);
-/* content.classList.add('content'); 
-const score = document.querySelector('#score');  */
+/* content.classList.add('content'); */
+const score = document.querySelector('#score');  
 const point = document.createElement('div');
-result.appendChild(point);
+score.appendChild(point);
 /*
 const scorec = document.querySelector('#scorec'); */
 const pointc = document.createElement('div');
-result.appendChild(pointc);
+score.appendChild(pointc);
 /*
 const you = document.querySelector('#you'); */
 const ycon = document.createElement('div');
-result.appendChild(ycon);
+score.appendChild(ycon);
 /*
 const comp = document.querySelector('#comp'); */
 const ccon = document.createElement('div');
-result.appendChild(ccon);
+score.appendChild(ccon);
 
 
 function computerPlay() {
