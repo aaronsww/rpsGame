@@ -6,9 +6,9 @@ const score = document.querySelector('#score');
 const point = document.createElement('div');
 score.appendChild(point);
 /*
-const scorec = document.querySelector('#scorec'); */
+const scorec = document.querySelector('#scorec');  */
 const pointc = document.createElement('div');
-score.appendChild(pointc);
+score.appendChild(pointc); 
 /*
 const you = document.querySelector('#you'); */
 const ycon = document.createElement('div');
@@ -91,7 +91,7 @@ function playRound(playerSelection) {
       cs++;
     } 
     point.textContent = "Your score="+ps;
-    pointc.textContent = "Computer's score="+cs;
+    pointc.textContent = "Computer's score="+cs; 
     if(ps == 5){
       ycon.textContent = "You have won most times!";
       const reload = document.querySelector('#reload');
