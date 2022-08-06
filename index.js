@@ -99,7 +99,6 @@ function playRound(playerSelection) {
       reclick.textContent = "Play Again";
       reclick.addEventListener('click', reloadThePage);
       reload.appendChild(reclick);
-
     }
     else if(cs == 5){
       ccon.textContent = "You have lost more times :(";
@@ -110,7 +109,6 @@ function playRound(playerSelection) {
       reload.appendChild(reclick);
     }
   }
-
 
 function reloadThePage(){
     location.reload();

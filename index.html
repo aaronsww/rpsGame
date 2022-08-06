@@ -2,19 +2,37 @@
   <head>
     <meta charset="UTF-8" />
     <title>Rock,Paper,Scissors Shoot!</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      #result {
+        flex: 1;
+        color: blue;
+      }
+      #id{
+        flex:1;
+      }
+    </style>
   </head>
   <body>
     <h1>Rock,Paper,Scissors Shoot!</h1>
-    <button id="rockbtn">Rock</button>
-    <button id="paperbtn">Paper</button>
-    <button id="scissorbtn">Scissors</button>
-    <div id="result"></div>
-    <div id="score"></div>
+    <div class="container">
+      <div id="arrange">
+        <button id="rockbtn">Rock</button>
+        <button id="paperbtn">Paper</button>
+        <button id="scissorbtn">Scissors</button>
+      </div>
+      <div id="result"></div>
+      <div id="reload"></div>
+    </div>
+    <!-- 
+      <div id="score"></div>
     <div id="scorec"></div>
     <div id="you"></div>
     <div id="comp"></div>
-    <div id="reload"></div>
-    <!-- <button id="reload" onClick="reloadThePage()">Play Again</button> -->
+    <button id="reload" onClick="reloadThePage()">Play Again</button> -->
     <script src="index.js"></script>
   </body>
 </html>
