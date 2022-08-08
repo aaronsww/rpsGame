@@ -39,6 +39,7 @@ let ps = 0,
 cs = 0;
 
 function playRound(playerSelection) {
+  
   const computerSelection = computerPlay();
     if (
        playerSelection.toLowerCase() == "rock" && 
@@ -108,6 +109,7 @@ function playRound(playerSelection) {
       reload.appendChild(reclick);
     }
     addHchoice(playerSelection);
+    addCchoice(computerSelection);
   }
 
 function reloadThePage(){
@@ -117,11 +119,26 @@ function reloadThePage(){
 function addHchoice(playerSelection){
   const human = document.querySelector('#humanChoice');
   var img = document.createElement("img");
-  img.src = "images/papers.png";
-  /* const content = document.createElement('img');
-  content.textContent = "It's a draw"; */
+  if(playerSelection== "paper")
+    img.src = "images/papers.png";
+  else if(playerSelection=="scissors")
+    img.src = "images/scissor.png"
+  else
+    img.src = "images/rock.png"
   humanChoice.appendChild(img);
 }
+function addCchoice(computerSelection){
+  const computer = document.querySelector('#compChoice');
+  var img = document.createElement("img");
+  if(computerSelection== "paper")
+    img.src = "images/papers.png";
+  else if(computerSelection=="scissors")
+    img.src = "images/scissor.png"
+  else
+    img.src = "images/rock.png"
+  computer.appendChild(img);
+}
+
 
 /* function game() {
   if (cs == 5) {
