@@ -107,12 +107,21 @@ function playRound(playerSelection) {
       reclick.addEventListener('click', reloadThePage);
       reload.appendChild(reclick);
     }
+    addHchoice(playerSelection);
   }
 
 function reloadThePage(){
     location.reload();
 } 
 
+function addHchoice(playerSelection){
+  const human = document.querySelector('#humanChoice');
+  var img = document.createElement("img");
+  img.src = "images/papers.png";
+  /* const content = document.createElement('img');
+  content.textContent = "It's a draw"; */
+  humanChoice.appendChild(img);
+}
 
 /* function game() {
   if (cs == 5) {
