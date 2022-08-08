@@ -90,8 +90,7 @@ function playRound(playerSelection) {
       content.textContent = "You lose! Rock beats Scissors!";
       cs++;
     } 
-    point.textContent = "Your score="+ps;
-    pointc.textContent = "Computer's score="+cs; 
+    point.textContent = ps+" - "+cs;
     if(ps == 5){
       ycon.textContent = "You have won most times!";
       const reload = document.querySelector('#reload');
