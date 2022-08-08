@@ -3,10 +3,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=>, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+    <style>
+      .font {
+        display: flex;
+        font-family: "Fredericka the Great", cursive;
+        font-size: 70;
+        font-weight: 600;
+        justify-content: center;
+        margin-left: 100;
+        margin-right: 100;
+        margin-top: 150;
+        color: #053719;
+      }
+      .button {
+        font-weight: 600;
+        font-family: "Lora", serif;
+        padding: 10;
+        transition-duration: 0.4s;
+        font-size: 20;
+        border-radius: 3px;
+        border: none;
+        background-color: #cfad31;
+      }
+      .button:hover {
+        background-color: #fefae0;
+        color: white;
+      }
+      .container{
+        display: flex;
+        justify-content: center;
+        margin-top: 30;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Wanna 1v1 a computer in a simple game of Rock,Paper, Scissors?</h1>
-    <button><a href="game.html">play!</a></button>
+  <body style="background-image: url('images/wally.jpg')">
+    <div class="font">
+      Wanna 1v1 a computer in a simple game of Rock, Paper, Scissors?
+    </div>
+    <div class="container">
+      <button class="button">
+        <a style="text-decoration: none; color: #053719" href="game.html"
+          >I accept.</a
+        >
+      </button>
+    </div>
   </body>
 </html>
