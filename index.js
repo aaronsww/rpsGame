@@ -11,8 +11,9 @@ const pointc = document.createElement('div');
 score.appendChild(pointc); 
 /*
 const you = document.querySelector('#you'); */
+const final = document.querySelector('#finalResult');
 const ycon = document.createElement('div');
-score.appendChild(ycon);
+final.appendChild(ycon);
 /*
 const comp = document.querySelector('#comp'); */
 const ccon = document.createElement('div');
@@ -138,7 +139,6 @@ function addCchoice(computerSelection){
     img.src = "images/rock.png"
   computer.appendChild(img);
 }
-
 
 /* function game() {
   if (cs == 5) {
