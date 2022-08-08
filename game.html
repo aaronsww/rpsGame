@@ -2,20 +2,35 @@
   <head>
     <meta charset="UTF-8" />
     <title>Rock, Paper, Scissors Shoot!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .container {
         display: flex;
-        flex-direction: row;
+
         border: 2px solid black;
+        justify-content: center;
       }
       .container1 {
-        flex: 1;
+        /* flex: 1; */
+        background-color: #ffddd2;
+        flex-basis: 25%;
       }
       .container2 {
-        flex: 2;
+        /* flex: 2; */
+        background-color: #edf6f9;
+        justify-content: center;
+        flex-basis: 50%;
+        font-family: "Oxygen", sans-serif;
       }
       .container3 {
-        flex: 1;
+        /* flex: 1; */
+        background-color: #83c5be;
+        flex-basis: 25%;
       }
       #result {
         flex: 1;
@@ -30,15 +45,13 @@
     </style>
   </head>
   <body>
-    <h1 style="display: flex; justify-content: center">
-      Rock, Paper, Scissors Shoot!
-    </h1>
     <div class="container">
       <div class="container1">
         <div>Player</div>
         <div id="humanChoice"></div>
       </div>
       <div class="container2">
+        <div style="font-size: 60">Rock, Paper, Scissors Shoot!</div>
         <div id="result"></div>
         <div id="score"></div>
         <button id="rockbtn">

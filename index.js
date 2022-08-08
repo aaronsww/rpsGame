@@ -17,7 +17,7 @@ final.appendChild(ycon);
 /*
 const comp = document.querySelector('#comp'); */
 const ccon = document.createElement('div');
-score.appendChild(ccon);
+final.appendChild(ccon);
 
 
 function computerPlay() {
