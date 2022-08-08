@@ -5,9 +5,19 @@
     <style>
       .container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
         border: 2px solid black;
+      }
+      .container1 {
+        
+        flex: 1;
+      }
+      .container2 {
+        
+        flex: 2;
+      }
+      .container3 {
+        flex: 1;
       }
       #result {
         flex: 1;
@@ -26,14 +36,14 @@
       Rock, Paper, Scissors Shoot!
     </h1>
     <div class="container">
-      <div id="result"></div>
-      <div id="arrange">
+      <div class="container1">
+        <div>Player</div>
+      </div>
+      <div class="container2">
+        <div id="result"></div>
+        <div id="score"></div>
         <button id="rockbtn">
-          <img
-            src="images/rock.png"
-            alt=""
-            style="height: 150; width: 150"
-          />
+          <img src="images/rock.png" alt="" style="height: 150; width: 150" />
         </button>
         <button id="paperbtn">
           <img src="images/papers.png" alt="" style="height: 150; width: 150" />
@@ -45,10 +55,13 @@
             style="height: 150; width: 150"
           />
         </button>
+        <div id="reload"></div>
       </div>
-      <div id="score"></div>
-      <div id="reload"></div>
+      <div class="container3">
+        <div>computer</div>
+      </div>
     </div>
+
     <!-- 
      
     <div id="scorec"></div>
