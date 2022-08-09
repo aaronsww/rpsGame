@@ -31,8 +31,6 @@
   #score{
     align-items: center;
     border: 2px solid black;
-    padding: 50;
-    margin-bottom: 80;
   }
   #buttons {
     display: flex;
@@ -60,4 +58,14 @@
   }
   #compChoice{
     padding-top: 100;
+  }
+  .left{
+    font-family: 'Henny Penny', cursive;
+  }
+  .right{
+    font-family: 'Henny Penny', cursive;
+  }
+  .header{
+     font-size: 60;
+    font-family: 'Henny Penny', cursive;
   }
