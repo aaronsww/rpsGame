@@ -11,40 +11,51 @@
     <style>
       .container {
         display: flex;
-
+        margin: -10;
         border: 2px solid black;
         justify-content: center;
         text-align: center;
       }
       .container1 {
         /* flex: 1; */
-        background-color: #ffddd2;
-        flex-basis: 25%;
+        background-color: #ffa69e;
+        flex-basis: 20%;
       }
       .container2 {
         /* flex: 2; */
-        background-color: #edf6f9;
+        background-color: #faf3dd;
         justify-content: center;
-        flex-basis: 50%;
+        flex-basis: 60%;
         font-family: "Oxygen", sans-serif;
       }
       .container3 {
         /* flex: 1; */
-        background-color: #83c5be;
-        flex-basis: 25%;
+        background-color: #b8f2e6;
+        flex-basis: 20%;
       }
       #result {
-        flex: 1;
-        color: blue;
         border: 2px solid black;
         padding: 50;
       }
       #score {
-        flex: 1;
         align-items: center;
         border: 2px solid black;
         padding: 50;
         margin-bottom: 80;
+      }
+      #buttons {
+        display: flex;
+        justify-content: space-around;
+      }
+      #finalResult {
+        flex: 1;
+        border: 2px solid black;
+        padding: 50;
+      }
+      #reload {
+        flex: 1;
+        border: 2px solid black;
+        padding: 50;
       }
     </style>
   </head>
@@ -58,19 +69,25 @@
         <div style="font-size: 60">Rock, Paper, Scissors Shoot!</div>
         <div id="result"></div>
         <div id="score"></div>
-        <button id="rockbtn">
-          <img src="images/rock.png" alt="" style="height: 150; width: 150" />
-        </button>
-        <button id="paperbtn">
-          <img src="images/papers.png" alt="" style="height: 150; width: 150" />
-        </button>
-        <button id="scissorbtn">
-          <img
-            src="images/scissor.png"
-            alt=""
-            style="height: 150; width: 150"
-          />
-        </button>
+        <div id="buttons">
+          <button id="rockbtn">
+            <img src="images/rock.png" alt="" style="height: 150; width: 150" />
+          </button>
+          <button id="paperbtn">
+            <img
+              src="images/papers.png"
+              alt=""
+              style="height: 150; width: 150"
+            />
+          </button>
+          <button id="scissorbtn">
+            <img
+              src="images/scissor.png"
+              alt=""
+              style="height: 150; width: 150"
+            />
+          </button>
+        </div>
         <div id="finalResult"></div>
         <div id="reload"></div>
       </div>
