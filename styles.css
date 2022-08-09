@@ -1,7 +1,6 @@
 .container {
     display: flex;
     margin: -10;
-    border: 2px solid black;
     justify-content: center;
     text-align: center;
   }
@@ -10,12 +9,15 @@
     font-size: 50;
     background-color: #ffa69e;
     flex-basis: 20%;
+    padding-bottom: 240;
   }
   .container2 {
     /* flex: 2; */
+    font-family: 'Fresca', sans-serif;
     background-color: #faf3dd;
     justify-content: center;
     flex-basis: 60%;
+    font-size: 40 ;
      
   }
   .container3 {
@@ -25,47 +27,62 @@
     flex-basis: 20%;
   }
   #result {
-    border: 2px solid black;
-    padding: 50;
+    padding-top: 60;
+    padding-bottom: 20;
   }
   #score{
+    font-size: 70;
     align-items: center;
-    border: 2px solid black;
   }
   #buttons {
+    padding-top: 40;
     display: flex;
     justify-content: center;
   }
   #rockbtn {
+    padding: 20;
     margin-right: 20;
+    background-color: #faf3dd;
+    border-radius: 7px;
   }
   #paperbtn {
+    padding: 20;
     margin-right: 20;
+    background-color: #faf3dd;
+    border-radius: 7px;
   }
+  #scissorbtn{
+    padding: 20;
+    background-color: #faf3dd;
+    border-radius: 7px;
+    }
+
   #finalResult {
     flex: 1;
-    border: 2px solid black;
-    padding: 50;
+   padding-top: 40;
+   font-size: 60;
+   font-weight: 300;
   }
   #reload {
     flex: 1;
-    border: 2px solid black;
-    padding: 50;
-    
+    padding-top: 20;
   }
   #humanChoice{
-    padding-top: 100;
+    padding-top: 50;
   }
   #compChoice{
-    padding-top: 100;
+    padding-top: 50;
   }
   .left{
+    margin-top: 140;
     font-family: 'Henny Penny', cursive;
   }
   .right{
+    margin-top: 140;
     font-family: 'Henny Penny', cursive;
   }
   .header{
+    margin-top: 50;
      font-size: 60;
     font-family: 'Henny Penny', cursive;
   }
