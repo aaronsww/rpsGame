@@ -18,7 +18,7 @@
     justify-content: center;
     flex-basis: 60%;
     font-size: 40 ;
-     
+    padding-bottom: 100;
   }
   .container3 {
     /* flex: 1; */
@@ -101,3 +101,12 @@
      font-size: 60;
     font-family: 'Henny Penny', cursive;
   }
+  .cr{
+    padding: 40px;
+    background-color: #5c374c;
+    margin: -10;
+    font-size:  17px;
+    color: #F9FAF8;
+    text-align: center;
+    font-family: 'Albert Sans', sans-serif;
+}
