@@ -100,7 +100,7 @@ function playRound(playerSelection) {
       const reload = document.querySelector('#reload');
       const reclick = document.createElement('button');
       reclick.textContent = "Play Again";
-      reclick.style.cssText = 'padding: 14px 40px; font-size: 20; ';  
+      reclick.style.cssText = 'padding: 14px 40px; font-size: 20;';  
       reclick.addEventListener('click', reloadThePage);
       reload.appendChild(reclick);
     }

@@ -7,14 +7,16 @@
   .container1 {
     /* flex: 1; */
     font-size: 50;
-    background-color: #ffa69e;
+    color: #f4a261;
+    background-color: #2a9d8f;
     flex-basis: 20%;
     padding-bottom: 240;
   }
   .container2 {
     /* flex: 2; */
+    color: #e76f51;
     font-family: 'Fresca', sans-serif;
-    background-color: #faf3dd;
+    background-color: #e9c46a;
     justify-content: center;
     flex-basis: 60%;
     font-size: 40 ;
@@ -22,8 +24,9 @@
   }
   .container3 {
     /* flex: 1; */
+    color: #2a9d8f;
     font-size: 50;
-    background-color: #b8f2e6;
+    background-color: #f4a261;
     flex-basis: 20%;
   }
   #result {
@@ -47,7 +50,7 @@
     transition-duration: 0.4s;
   }
   #rockbtn:hover {
-    background-color: #4CAF50;  
+    background-color: #264653;  
     color: white;
   }
   #paperbtn {
@@ -58,7 +61,7 @@
     transition-duration: 0.4s;
   }
   #paperbtn:hover {
-    background-color: #4CAF50;  
+    background-color: #264653;  
     color: white;
   }
   #scissorbtn{
@@ -68,7 +71,7 @@
     transition-duration: 0.4s;
     }
     #scissorbtn:hover {
-        background-color: #4CAF50;  
+        background-color: #264653;  
         color: white;
     }
 
@@ -83,27 +86,28 @@
     padding-top: 20;
   }
   #humanChoice{
-    padding-top: 50;
+    padding-top: 20;
   }
   #compChoice{
-    padding-top: 50;
+    padding-top: 20;
   }
   .left{
-    margin-top: 140;
+    margin-top: 150;
     font-family: 'Henny Penny', cursive;
   }
   .right{
-    margin-top: 140;
+    margin-top: 150;
     font-family: 'Henny Penny', cursive;
   }
   .header{
+    color: #264653;
     margin-top: 50;
      font-size: 60;
     font-family: 'Henny Penny', cursive;
   }
   .cr{
     padding: 40px;
-    background-color: #5c374c;
+    background-color: #264653;
     margin: -10;
     font-size:  17px;
     color: #F9FAF8;
