@@ -5,74 +5,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .container {
-        display: flex;
-        margin: -10;
-        border: 2px solid black;
-        justify-content: center;
-        text-align: center;
-      }
-      .container1 {
-        /* flex: 1; */
-        background-color: #ffa69e;
-        flex-basis: 20%;
-      }
-      .container2 {
-        /* flex: 2; */
-        background-color: #faf3dd;
-        justify-content: center;
-        flex-basis: 60%;
-        font-family: "Oxygen", sans-serif;
-      }
-      .container3 {
-        /* flex: 1; */
-        background-color: #b8f2e6;
-        flex-basis: 20%;
-      }
-      #result {
-        border: 2px solid black;
-        padding: 50;
-      }
-      #score {
-        align-items: center;
-        border: 2px solid black;
-        padding: 50;
-        margin-bottom: 80;
-      }
-      #buttons {
-        display: flex;
-        justify-content: center;
-      }
-      #rockbtn {
-        margin-right: 20;
-      }
-      #paperbtn {
-        margin-right: 20;
-      }
-      #finalResult {
-        flex: 1;
-        border: 2px solid black;
-        padding: 50;
-      }
-      #reload {
-        flex: 1;
-        border: 2px solid black;
-        padding: 50;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="container">
       <div class="container1">
-        <div>Player</div>
+        <div class="left">Player</div>
         <div id="humanChoice"></div>
       </div>
       <div class="container2">
-        <div style="font-size: 60">Rock, Paper, Scissors Shoot!</div>
+        <div style="font-size: 60;"">Rock, Paper, Scissors Shoot!</div>
         <div id="result"></div>
         <div id="score"></div>
         <div id="buttons">
@@ -98,7 +43,7 @@
         <div id="reload"></div>
       </div>
       <div class="container3">
-        <div>Computer</div>
+        <div class="right">Computer</div>
         <div id="compChoice"></div>
       </div>
     </div>

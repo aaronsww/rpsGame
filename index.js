@@ -1,3 +1,6 @@
+let ps = 0,
+cs = 0;
+
 const result = document.querySelector('#result');
 const content = document.createElement('div');
 result.appendChild(content);
@@ -26,18 +29,17 @@ function computerPlay() {
   return randomans;
 } 
 
-rockbtn.addEventListener('click', () => {
-  playRound("rock");
-});
-paperbtn.addEventListener('click', () => {
-  playRound("paper");
-});
-scissorbtn.addEventListener('click', () => {
-  playRound("scissors");
-});
 
-let ps = 0,
-cs = 0;
+  rockbtn.addEventListener('click', () => {
+    playRound("rock");
+  });
+  paperbtn.addEventListener('click', () => {
+    playRound("paper");
+  });
+  scissorbtn.addEventListener('click', () => {
+    playRound("scissors");
+  });
+
 
 function playRound(playerSelection) {
   
