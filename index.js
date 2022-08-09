@@ -116,28 +116,33 @@ function playRound(playerSelection) {
 function reloadThePage(){
     location.reload();
 } 
-
+const human = document.querySelector('#humanChoice');
+var img1 = document.createElement("img");
+img1.src = "images/mark.png";
+humanChoice.appendChild(img1);
 function addHchoice(playerSelection){
-  const human = document.querySelector('#humanChoice');
-  var img = document.createElement("img");
+ 
   if(playerSelection== "paper")
-    img.src = "images/papers.png";
+    img1.src = "images/papers.png";
   else if(playerSelection=="scissors")
-    img.src = "images/scissor.png"
+    img1.src = "images/scissor.png"
   else
-    img.src = "images/rock.png"
-  humanChoice.appendChild(img);
+    img1.src = "images/rock.png"
+  human.replaceChild(img1,img1);
 }
+const computer = document.querySelector('#compChoice');
+var img = document.createElement("img");
+img.src = "images/mark.png";
+computer.appendChild(img);
 function addCchoice(computerSelection){
-  const computer = document.querySelector('#compChoice');
-  var img = document.createElement("img");
+ 
   if(computerSelection== "paper")
     img.src = "images/papers.png";
   else if(computerSelection=="scissors")
     img.src = "images/scissor.png"
   else
     img.src = "images/rock.png"
-  computer.appendChild(img);
+computer.replaceChild(img,img);
 }
 
 /* function game() {
