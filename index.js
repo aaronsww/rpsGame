@@ -119,6 +119,7 @@ function reloadThePage(){
 const human = document.querySelector('#humanChoice');
 var img1 = document.createElement("img");
 img1.src = "images/mark.png";
+img1.style.cssText = 'height:300; width:auto';    
 humanChoice.appendChild(img1);
 function addHchoice(playerSelection){
  
@@ -133,9 +134,10 @@ function addHchoice(playerSelection){
 const computer = document.querySelector('#compChoice');
 var img = document.createElement("img");
 img.src = "images/mark.png";
+img.style.cssText = 'height:300; width:auto';    
 computer.appendChild(img);
 function addCchoice(computerSelection){
- 
+  
   if(computerSelection== "paper")
     img.src = "images/papers.png";
   else if(computerSelection=="scissors")
