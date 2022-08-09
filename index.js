@@ -104,7 +104,7 @@ function playRound(playerSelection) {
       reload.appendChild(reclick);
     }
     else if(cs == 5){
-      ccon.textContent = "You have lost more times :(";
+      ccon.textContent = "You have lost more times.";
       const reload = document.querySelector('#reload');
       const reclick = document.createElement('button');
       reclick.textContent = "Play Again";
@@ -149,15 +149,3 @@ function addCchoice(computerSelection){
 computer.replaceChild(img,img);
 }
 
-/* function game() {
-  if (cs == 5) {
-    return "You have lost more times :(";
-    
-  } else if(ps == 5){
-    return "You have won most times!";
-  }
-} 
-
-let final = game();
-console.log(final);
-*/

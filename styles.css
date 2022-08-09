@@ -44,17 +44,32 @@
     margin-right: 20;
     background-color: #faf3dd;
     border-radius: 7px;
+    transition-duration: 0.4s;
+  }
+  #rockbtn:hover {
+    background-color: #4CAF50;  
+    color: white;
   }
   #paperbtn {
     padding: 20;
     margin-right: 20;
     background-color: #faf3dd;
     border-radius: 7px;
+    transition-duration: 0.4s;
+  }
+  #paperbtn:hover {
+    background-color: #4CAF50;  
+    color: white;
   }
   #scissorbtn{
     padding: 20;
     background-color: #faf3dd;
     border-radius: 7px;
+    transition-duration: 0.4s;
+    }
+    #scissorbtn:hover {
+        background-color: #4CAF50;  
+        color: white;
     }
 
   #finalResult {
