@@ -9,4 +9,4 @@ This is the first project where I implemented JavaScript. I learned how to manip
 All icons and outlines used was from <a href="https://www.flaticon.com/">this awesome webiste.</a>
 
 <img src="images/wally.jpg" alt="">
-And here's where I got<a href="https://www.spoonflower.com/">this image background.</a>
+And here's where I got <a href="https://www.spoonflower.com/">this image background.</a>
