@@ -100,7 +100,7 @@ function playRound(playerSelection) {
       const reload = document.querySelector('#reload');
       const reclick = document.createElement('button');
       reclick.textContent = "Play Again";
-      reclick.style.cssText = 'padding: 14px 40px; font-size: 20;';  
+      reclick.style.cssText = 'font-size: 30px;'
       reclick.addEventListener('click', reloadThePage);
       reload.appendChild(reclick);
     }
@@ -121,7 +121,7 @@ function reloadThePage(){
 } 
 const human = document.querySelector('#humanChoice');
 var img1 = document.createElement("img");
-img1.src = "images/mark.png";
+img1.src = "images/qmark.png";  
 img1.style.cssText = 'height:300; width:auto';    
 humanChoice.appendChild(img1);
 function addHchoice(playerSelection){
@@ -136,7 +136,7 @@ function addHchoice(playerSelection){
 }
 const computer = document.querySelector('#compChoice');
 var img = document.createElement("img");
-img.src = "images/mark.png";
+img.src = "images/qmark.png";
 img.style.cssText = 'height:300; width:auto';    
 computer.appendChild(img);
 function addCchoice(computerSelection){

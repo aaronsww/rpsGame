@@ -18,6 +18,10 @@ This project implements the simple game of Rock, Paper, Scissors into a UI where
 
 ### In Action
 
+<img src="images/ss1.png" alt="">
+
+<img src="images/ss2.png" alt="">
+
 ## Credits
 
 All icons and outlines used were from <a href="https://www.flaticon.com/">this awesome webiste.</a>
