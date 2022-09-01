@@ -30,13 +30,13 @@ function computerPlay() {
 } 
 
 
-  rockbtn.addEventListener('click', () => {
+  rockbtn.addEventListener('click', () => { if(cs < 5 && ps < 5)
     playRound("rock");
   });
-  paperbtn.addEventListener('click', () => {
+  paperbtn.addEventListener('click', () => { if(cs < 5 && ps < 5)
     playRound("paper");
   });
-  scissorbtn.addEventListener('click', () => {
+  scissorbtn.addEventListener('click', () => { if(cs < 5 && ps < 5)
     playRound("scissors");
   });
 
