@@ -97,24 +97,24 @@ function playRound(playerSelection) {
     point.textContent = ps+" - "+cs;
     if(ps == 5){
       ycon.textContent = "You have won most times!";
-      const reload = document.querySelector('#reload');
+      again();
+    }
+    else if(cs == 5){
+      ccon.textContent = "You have lost more times.";
+      again();
+    }
+    addHchoice(playerSelection);
+    addCchoice(computerSelection);
+  }
+
+function again(){
+  const reload = document.querySelector('#reload');
       const reclick = document.createElement('button');
       reclick.textContent = "Play Again";
       reclick.style.cssText = 'font-size: 30px;'
       reclick.addEventListener('click', reloadThePage);
       reload.appendChild(reclick);
-    }
-    else if(cs == 5){
-      ccon.textContent = "You have lost more times.";
-      const reload = document.querySelector('#reload');
-      const reclick = document.createElement('button');
-      reclick.textContent = "Play Again";
-      reclick.addEventListener('click', reloadThePage);
-      reload.appendChild(reclick);
-    }
-    addHchoice(playerSelection);
-    addCchoice(computerSelection);
-  }
+}
 
 function reloadThePage(){
     location.reload();
