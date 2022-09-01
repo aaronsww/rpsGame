@@ -20,7 +20,7 @@ This project implements the simple game of Rock, Paper, Scissors into a UI where
 
 <img src="images/ss1.png" alt="">
 
-<img src="images/ss2.png" alt="">
+ <img src="images/ss2 (2).png" alt="">
 
 ## Credits
 
